@@ -2,6 +2,7 @@ package models.chess;
 
 import models.boardgame.Board;
 import models.boardgame.Piece;
+import models.boardgame.Position;
 
 public abstract class ChessPiece extends Piece {
 
@@ -16,6 +17,9 @@ public abstract class ChessPiece extends Piece {
         return color;
     }
 
-    
+    protected boolean isThereOpponentPiece(Position position){
+        ChessPiece p = (ChessPiece)getBoard().piece(position);
+        return p != null & p.getColor() != color;
+    }
     
 }
