@@ -1,6 +1,6 @@
 package models.boardgame;
 
-public class Piece {
+public abstract class Piece {
     protected Position position;
     private Board board;
 
@@ -13,5 +13,21 @@ public class Piece {
         return board;
     }
 
-    
+    public abstract boolean[][] possibleMoves();
+
+    public boolean possibleMove(Position position){
+        return possibleMoves()[position.getRow()][position.getColumn()];
+    }
+
+    public boolean isThereAnyPossibleMove(){
+        boolean mat[][] = possibleMoves();
+        for(boolean i[]: mat){
+            for(boolean j: i){
+                if(j){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }
