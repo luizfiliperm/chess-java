@@ -6,7 +6,7 @@ import models.boardgame.Position;
 import models.chess.pieces.Bishop;
 import models.chess.pieces.King;
 import models.chess.pieces.Knight;
-import models.chess.pieces.Pawn;
+// import models.chess.pieces.Pawn;
 import models.chess.pieces.Queen;
 import models.chess.pieces.Rook;
 
