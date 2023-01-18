@@ -6,7 +6,7 @@ import models.boardgame.Position;
 import models.chess.pieces.Bishop;
 import models.chess.pieces.King;
 import models.chess.pieces.Knight;
-// import models.chess.pieces.Pawn;
+import models.chess.pieces.Pawn;
 import models.chess.pieces.Queen;
 import models.chess.pieces.Rook;
 
@@ -80,7 +80,7 @@ public class ChessMatch {
         placeNewPiece('h', 8, new Rook(board, Color.BLACK));
 
         // for(int i=0;i< 8; i++){
-        //     placeNewPiece((char)(i), 7, new Pawn(board, Color.BLACK));
+        //     board.placePiece(new Pawn(board, Color.BLACK), new Position(1, i));
         // }
 
         placeNewPiece('a', 1, new Rook(board, Color.WHITE));
@@ -93,7 +93,7 @@ public class ChessMatch {
         placeNewPiece('h', 1, new Rook(board, Color.WHITE));
         
         // for(int i=0;i < 8; i++){
-        //     placeNewPiece((char)(i), 2, new Pawn(board, Color.BLACK));
+        //     board.placePiece(new Pawn(board, Color.WHITE), new Position(6, i));
         // }
 
         
