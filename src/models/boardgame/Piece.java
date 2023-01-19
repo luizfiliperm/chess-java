@@ -21,13 +21,14 @@ public abstract class Piece {
 
     public boolean isThereAnyPossibleMove(){
         boolean mat[][] = possibleMoves();
-        for(boolean i[]: mat){
+        for(boolean i[] : mat){
             for(boolean j: i){
                 if(j){
                     return true;
                 }
             }
         }
+
         return false;
     }
 }
